@@ -79,7 +79,8 @@ $BrandSecondaryColor: #F0A51A;
 
 .main-page {
   margin: 0 auto;
-  margin-top: 70px;
+  margin-top: 30px;
+  margin-bottom: 50px;
   text-align: center;
   h1 {
     font-family: $BrandFont;
@@ -88,13 +89,36 @@ $BrandSecondaryColor: #F0A51A;
   }
   .signup-button {
     padding: 20px 30px;
-    background-color: #60b044;
+    background-color: $BrandSecondaryColor;
     color: white;
     font-size: 1.5em;
     margin-top: 20px;
   }
 }
 
+.signup-form {
+  margin: 0 auto;
+  margin-top: 50px;
+  .field input {
+    width: 200px;
+  }
+  .actions {
+    margin-top: 10px;
+    color: $BrandSecondaryColor;
+  }
+}
+
+.login-form {
+  margin: 0 auto;
+  margin-top: 50px;
+  .field input {
+    width: 200px;
+  }
+  .actions {
+    margin-top: 10px;
+    color: $BrandSecondaryColor;
+  }
+}
 
 
 /* ====================================== FOOTER ====================================== */

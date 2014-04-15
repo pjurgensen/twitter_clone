@@ -1,0 +1,28 @@
+<%= content_for(:title, "Sign up") %>
+
+<div class="signup-form container">
+  <h1>Sign Up</h1>
+
+  <%= render("layouts/errors", :object => @user) %>
+
+  <%= form_for @user do |f| %>
+    <div class="field">
+      <%= f.label :handle %><br />
+      <%= f.text_field :handle, class: 'form-control' %>
+    </div>
+    <div class="field">
+      <%= f.label :email %><br />
+      <%= f.text_field :email, class: 'form-control' %>
+    </div>
+    <div class="field">
+      <%= f.label :password %><br />
+      <%= f.password_field :password, class: 'form-control'  %>
+    </div>
+    <div class="field">
+      <%= f.label :password_confirmation %><br />
+      <%= f.password_field :password_confirmation, class: 'form-control' %>
+    </div>
+    <div class="actions"><%= submit_tag "Sign up" %></div>
+  <% end %>
+
+</div>
