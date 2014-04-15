@@ -1,0 +1,104 @@
+$BrandFont: 'Acme', sans-serif;
+$RobotoCondensed: 'Roboto Condensed', sans-serif;
+$OpenSansCondensed: 'Open Sans Condensed', sans-serif;
+
+$BrandPrimaryColor: #035C94;
+$BrandSecondaryColor: #F0A51A;
+
+/* ====================================== HEADER ====================================== */
+
+.header {
+  background-color: $BrandPrimaryColor;
+  color: white;
+  ul li {
+    list-style: none;
+  }
+}
+
+.brand {
+  font-family: $BrandFont;
+  font-size: 1.7em;
+  padding-top: 8px;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  a:hover {
+    color: $BrandSecondaryColor;
+    text-decoration: none;
+  }
+  li {
+    display: inline;
+  }
+}
+
+.header-links {
+  padding: 15px 35px 0px 0px;
+  font-size: 1.2em;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  a:hover {
+    color: $BrandSecondaryColor;
+    text-decoration: none;
+  }
+  li {
+    display: inline;
+    margin-left: 10px;
+  }
+}
+
+.orange {
+  color: $BrandSecondaryColor;
+}
+
+.container-inner {
+  width: 100%;
+
+}
+
+
+
+/* ======================================= BODY ======================================= */
+
+.flash {
+  margin-top: 60px;
+  right: 0px;
+  font-size: 2em;
+  .green {
+    list-style: none;
+    color: #60b044;
+  }
+}
+
+.red {
+  list-style: none;
+  color: Red;
+}
+
+.main-page {
+  margin: 0 auto;
+  margin-top: 70px;
+  text-align: center;
+  h1 {
+    font-family: $BrandFont;
+    font-size: 3.5em;
+    margin-bottom: 30px;
+  }
+  .signup-button {
+    padding: 20px 30px;
+    background-color: #60b044;
+    color: white;
+    font-size: 1.5em;
+    margin-top: 20px;
+  }
+}
+
+
+
+/* ====================================== FOOTER ====================================== */
+
+.footer {
+  background-color: WhiteSmoke;
+}

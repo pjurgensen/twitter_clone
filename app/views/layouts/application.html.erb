@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>TwitterClone</title>
+   <title><%= content_for?(:title) ? yield(:title)+" | Tweeter" : "Tweeter" %></title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+
+  <link href='http://fonts.googleapis.com/css?family=Acme|Roboto+Condensed:400,700|Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
+<%= render 'layouts/header' %>
+
+<div class="container flash">
+  <span class="green"><%= flash[:notice] %></span>
+  <span class="red"><%= flash[:alert] %></span>
+</div>
+
 <%= yield %>
+
+<%= render 'layouts/footer' %>
 
 </body>
 </html>
