@@ -12,7 +12,7 @@ For today's project, let's make a clone of Twitter.
 
 * [ COMPLETED ] Start off with user signups. When somebody signs up, send them a welcome email.
 
-* [ IN PROGRESS ] Then, let users post tweets. If another user's handle is mentioned in the tweet, send that user a notification email.
+* [ COMPLETED ] Then, let users post tweets. If another user's handle is mentioned in the tweet, send that user a notification email.
 
 * Now, let users follow each other. Of course, notify somebody by email if when they are followed. Add pages showing who a user follows, and who follows them.
 
