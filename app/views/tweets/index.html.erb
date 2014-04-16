@@ -7,7 +7,7 @@
     <ul>
       <% @tweets.each do | tweet | %>
         <li class="tweet-message"><%= tweet.message %></li><br />
-        <li class="tweet-user">Tweeted by <%= link_to tweet.user.handle, user_path(tweet.user) %></li>
+        <li class="tweet-user">Tweeted by <%= link_to tweet.user.handle, user_path(tweet.user) %></li><br /><br />
       <% end %>
     </ul>
 
