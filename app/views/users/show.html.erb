@@ -2,6 +2,14 @@
   <div class="row">
     <h1>Welcome <%= @user.handle %></h1>
 
+    <ul>
+      <% @tweets.each do | tweet | %>
+        <li class="user-handle"><%= tweet.user.handle %> |
+          <%= tweet.created_at.strftime("%B %d, %Y") %>
+        </li><br />
+        <li class="user-message"><%= tweet.message %></li>
+      <% end %>
+    </ul>
 
   </div>
 </div>

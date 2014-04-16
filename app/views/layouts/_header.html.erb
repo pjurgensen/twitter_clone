@@ -1,10 +1,11 @@
 <div class="header navbar navbar-fixed-top">
   <div class="container-inner">
     <ul class="brand pull-left">
-      <li><%= link_to "Tweeter", root_path %></li>
+      <li><%= link_to "Tweeter", tweets_path %></li>
     </ul>
     <ul class="header-links pull-right">
       <% if current_user %>
+        <li><%= link_to "Create a Tweet", new_tweet_path %></li>
         <li>Logged in as <span class="orange"><%= link_to current_user.handle, user_path(current_user) %></span></li>
         <li><%= link_to "Log Out", logout_path %></li>
       <% else %>

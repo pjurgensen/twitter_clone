@@ -1,0 +1,15 @@
+<%= content_for(:title, "Tweets") %>
+
+<div class="all-tweets container">
+  <div class="row">
+    <h1>Tweeter</h1>
+
+    <ul>
+      <% @tweets.each do | tweet | %>
+        <li class="tweet-message"><%= tweet.message %></li><br />
+        <li class="tweet-user">Tweeted by <%= link_to tweet.user.handle, user_path(tweet.user) %></li>
+      <% end %>
+    </ul>
+
+  </div>
+</div>

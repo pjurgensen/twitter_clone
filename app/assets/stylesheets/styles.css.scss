@@ -120,6 +120,34 @@ $BrandSecondaryColor: #F0A51A;
   }
 }
 
+.all-tweets {
+  .tweet-message {
+    display: inline;
+    color: $BrandSecondaryColor;
+  }
+  .tweet-user {
+    display: inline;
+    color: $BrandPrimaryColor;
+    text-align: center;
+    font-size: 8px;
+  }
+
+}
+
+.user-page {
+  .user-handle {
+    display: inline;
+    color: $BrandPrimaryColor;
+    font-size: 8px;
+    text-align: left;
+  }
+  .user-message {
+    display: inline;
+    color: $BrandSecondaryColor;
+  }
+
+}
+
 
 /* ====================================== FOOTER ====================================== */
 

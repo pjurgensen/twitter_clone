@@ -7,5 +7,6 @@ TwitterClone::Application.routes.draw do
 
   resources :users, :except => [:index, :update, :edit]
   resources :sessions
+  resources :tweets
 
 end
