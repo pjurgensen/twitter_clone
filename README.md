@@ -5,6 +5,7 @@
 Note: Mailcatcher was used in development and the gem is not included in Gemfile (due to conflicting with other gems). Please run the following in the terminal get started:
 $ gem install mailcatcher
 $ mailcatcher
+Go to http://localhost:1080/
 
 
 For today's project, let's make a clone of Twitter.
